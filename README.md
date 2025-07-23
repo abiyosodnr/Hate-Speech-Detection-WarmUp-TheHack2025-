@@ -53,7 +53,8 @@ We convert text into numerical representations using:
 Several machine learning models are tested:
 - Logistic Regression  
 - Naive Bayes  
-- Support Vector Machine (SVM)  
+- Support Vector Machine (SVM)
+- Random Forest
 
 ### 5. Evaluation
 
