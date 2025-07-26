@@ -22,5 +22,5 @@ if st.button("Prediksi"):
     output_dict = model(vectorized)
     pred = list(output_dict.values())[0].numpy()[0][0]
 
-    label = "Teks diatas mengandung Hate Speech" if pred > 0.5 else "Bukan Hate Speech"
+    label = "🚫 Komentar Anda mengandung kalimat yang tidak diperkenankan. Silakan tulis komentar yang lebih baik." if pred > 0.5 else "✅ Komentar Anda diterima. Terima kasih!"
     st.write(f"**{label}** (Confidence: {pred:.2f})")
