@@ -29,9 +29,8 @@ The project emphasizes end-to-end implementation — from text preprocessing to 
 ### 1. Dataset
 
 We use a labeled dataset containing text samples categorized into:
-- Hate Speech  
-- Offensive Language  
-- Neutral  
+- Hate Speech (1) 
+- Non Hate Speech (0)
 
 ### 2. Preprocessing
 
@@ -50,30 +49,15 @@ We convert text into numerical representations using:
 
 ### 4. Model Training
 
-Several machine learning models are tested:
-- Logistic Regression  
+Machine learning & Deep learning models are tested:
 - Naive Bayes  
-- Support Vector Machine (SVM)
-- Random Forest
+- Sequential (BiLSTM)
 
 ### 5. Evaluation
 
 We evaluate models using:
 - Accuracy  
-- Precision, Recall, F1-Score  
-- Confusion Matrix  
+- Precision, Recall
 
 ---
 
-## 💻 How to Run
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/hate-speech-detection-warmup.git
-cd hate-speech-detection-warmup
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the detection script
-python main.py
